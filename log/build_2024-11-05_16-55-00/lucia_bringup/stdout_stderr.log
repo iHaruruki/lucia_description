@@ -1,0 +1,10 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/peach/ros2_ws/src/lucia_slam_navigation/lucia_bringup/script": No
+  such file or directory.
+
+[0m
+-- Install configuration: ""
+-- Up-to-date: /home/peach/ros2_ws/src/lucia_slam_navigation/install/lucia_bringup/share/lucia_bringup/launch
+-- Up-to-date: /home/peach/ros2_ws/src/lucia_slam_navigation/install/lucia_bringup/share/lucia_bringup/launch/lucia_state_publisher.launch.py
+-- Installing: /home/peach/ros2_ws/src/lucia_slam_navigation/install/lucia_bringup/share/lucia_bringup/param

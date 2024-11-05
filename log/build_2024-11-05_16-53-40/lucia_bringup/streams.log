@@ -1,0 +1,32 @@
+[0.012s] Invoking command in '/home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/peach/ros2_ws/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/install/urdf_robot:/home/peach/ros2_ws/install/ros2_workshop:/home/peach/ros2_ws/install/lucia_slam_navigation:/home/peach/ros2_ws/src/urdf_tutorial_r2d2/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_robot:/home/peach/ros2_ws/src/install/ros2_workshop:/opt/ros/humble /usr/bin/cmake /home/peach/ros2_ws/src/lucia_slam_navigation/lucia_bringup -DCMAKE_INSTALL_PREFIX=/home/peach/ros2_ws/src/lucia_slam_navigation/install/lucia_bringup
+[0.127s] -- The C compiler identification is GNU 11.4.0
+[0.199s] -- The CXX compiler identification is GNU 11.4.0
+[0.209s] -- Detecting C compiler ABI info
+[0.271s] -- Detecting C compiler ABI info - done
+[0.274s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.275s] -- Detecting C compile features
+[0.276s] -- Detecting C compile features - done
+[0.279s] -- Detecting CXX compiler ABI info
+[0.346s] -- Detecting CXX compiler ABI info - done
+[0.350s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.350s] -- Detecting CXX compile features
+[0.351s] -- Detecting CXX compile features - done
+[0.364s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.498s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.668s] -- Configuring done
+[0.670s] -- Generating done
+[0.670s] -- Build files have been written to: /home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup
+[0.673s] Invoked command in '/home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/peach/ros2_ws/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/install/urdf_robot:/home/peach/ros2_ws/install/ros2_workshop:/home/peach/ros2_ws/install/lucia_slam_navigation:/home/peach/ros2_ws/src/urdf_tutorial_r2d2/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_robot:/home/peach/ros2_ws/src/install/ros2_workshop:/opt/ros/humble /usr/bin/cmake /home/peach/ros2_ws/src/lucia_slam_navigation/lucia_bringup -DCMAKE_INSTALL_PREFIX=/home/peach/ros2_ws/src/lucia_slam_navigation/install/lucia_bringup
+[0.675s] Invoking command in '/home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/peach/ros2_ws/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/install/urdf_robot:/home/peach/ros2_ws/install/ros2_workshop:/home/peach/ros2_ws/install/lucia_slam_navigation:/home/peach/ros2_ws/src/urdf_tutorial_r2d2/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_robot:/home/peach/ros2_ws/src/install/ros2_workshop:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup -- -j8 -l8
+[0.704s] Invoked command in '/home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/peach/ros2_ws/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/install/urdf_robot:/home/peach/ros2_ws/install/ros2_workshop:/home/peach/ros2_ws/install/lucia_slam_navigation:/home/peach/ros2_ws/src/urdf_tutorial_r2d2/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_robot:/home/peach/ros2_ws/src/install/ros2_workshop:/opt/ros/humble /usr/bin/cmake --build /home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup -- -j8 -l8
+[0.737s] Invoking command in '/home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/peach/ros2_ws/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/install/urdf_robot:/home/peach/ros2_ws/install/ros2_workshop:/home/peach/ros2_ws/install/lucia_slam_navigation:/home/peach/ros2_ws/src/urdf_tutorial_r2d2/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_robot:/home/peach/ros2_ws/src/install/ros2_workshop:/opt/ros/humble /usr/bin/cmake --install /home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup
+[0.743s] -- Install configuration: ""
+[0.743s] -- Installing: /home/peach/ros2_ws/src/lucia_slam_navigation/install/lucia_bringup/share/lucia_bringup/launch
+[0.743s] -- Installing: /home/peach/ros2_ws/src/lucia_slam_navigation/install/lucia_bringup/share/lucia_bringup/launch/lucia_state_publisher.launch.py
+[0.743s] [31mCMake Error at cmake_install.cmake:46 (file):
+[0.744s]   file INSTALL cannot find
+[0.744s]   "/home/peach/ros2_ws/src/lucia_slam_navigation/lucia_bringup/param": No
+[0.744s]   such file or directory.
+[0.744s] 
+[0.744s] [0m
+[0.747s] Invoked command in '/home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/peach/ros2_ws/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/install/urdf_robot:/home/peach/ros2_ws/install/ros2_workshop:/home/peach/ros2_ws/install/lucia_slam_navigation:/home/peach/ros2_ws/src/urdf_tutorial_r2d2/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_tutorial_r2d2:/home/peach/ros2_ws/src/install/urdf_robot:/home/peach/ros2_ws/src/install/ros2_workshop:/opt/ros/humble /usr/bin/cmake --install /home/peach/ros2_ws/src/lucia_slam_navigation/build/lucia_bringup
