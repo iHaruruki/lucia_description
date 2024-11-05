@@ -1,0 +1,4 @@
+source;share/lucia_slam/local_setup.bash
+source;share/lucia_slam/local_setup.dsv
+source;share/lucia_slam/local_setup.sh
+source;share/lucia_slam/local_setup.zsh
