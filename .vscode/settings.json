@@ -1,0 +1,37 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/peach/ros2_ws/install/urdf_tutorial_r2d2/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/install/urdf_robot/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/install/ros2_workshop/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/install/raspimouse_description/local/lib/python3.10/dist-packages",
+        "/home/peach/ros2_ws/install/lucia_description/local/lib/python3.10/dist-packages",
+        "/home/peach/ros2_ws/src/urdf_tutorial_r2d2/build/urdf_tutorial_r2d2",
+        "/home/peach/ros2_ws/src/urdf_tutorial_r2d2/install/urdf_tutorial_r2d2/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/src/install/urdf_tutorial_r2d2/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/src/build/urdf_robot",
+        "/home/peach/ros2_ws/src/install/urdf_robot/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/src/build/ros2_workshop",
+        "/home/peach/ros2_ws/src/install/ros2_workshop/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/src/install/lucia_description/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/peach/ros2_ws/install/urdf_tutorial_r2d2/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/install/urdf_robot/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/install/ros2_workshop/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/install/raspimouse_description/local/lib/python3.10/dist-packages",
+        "/home/peach/ros2_ws/install/lucia_description/local/lib/python3.10/dist-packages",
+        "/home/peach/ros2_ws/src/urdf_tutorial_r2d2/build/urdf_tutorial_r2d2",
+        "/home/peach/ros2_ws/src/urdf_tutorial_r2d2/install/urdf_tutorial_r2d2/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/src/install/urdf_tutorial_r2d2/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/src/build/urdf_robot",
+        "/home/peach/ros2_ws/src/install/urdf_robot/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/src/build/ros2_workshop",
+        "/home/peach/ros2_ws/src/install/ros2_workshop/lib/python3.10/site-packages",
+        "/home/peach/ros2_ws/src/install/lucia_description/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "cmake.ignoreCMakeListsMissing": true
+}
