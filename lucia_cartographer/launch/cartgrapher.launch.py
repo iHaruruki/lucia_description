@@ -22,7 +22,7 @@ from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-#from launch.substitutions import LaunchConfiguration
+from launch.substitutions import ThisLaunchFileDir
 
 
 def generate_launch_description():
@@ -39,8 +39,8 @@ def generate_launch_description():
     rviz_config_dir = os.path.join(get_package_share_directory('lucia_cartographer'),
                                    'rviz', 'lucia_cartographer.rviz')
     
-    current_dir = os.path.dirname(os.path.realpath(__file__))
-    config_path = os.path.join(current_dir, 'cartographer_occupancy_grid_node.launch.py')
+    #current_dir = os.path.dirname(os.path.realpath(__file__))
+    #config_path = os.path.join(current_dir, 'cartographer_occupancy_grid_node.launch.py')
 
     return LaunchDescription([
         DeclareLaunchArgument(
@@ -76,7 +76,7 @@ def generate_launch_description():
             description='OccupancyGrid publishing period'),
 
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([os.path.join(current_dir, '/occupancy_grid.launch.py')]),
+            PythonLaunchDescriptionSource([ThisLaunchFileDir(), '/occupancy_grid.launch.py']),
             launch_arguments={'use_sim_time': use_sim_time, 'resolution': resolution,
                               'publish_period_sec': publish_period_sec}.items(),
         ),
