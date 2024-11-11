@@ -2,7 +2,7 @@
 # Set minimum required version of cmake, project name and compile options
 ################################################################################
 cmake_minimum_required(VERSION 3.5)
-project(lucia_bringup)
+project(lucia_localization)
 
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 17)
@@ -20,17 +20,9 @@ find_package(ament_cmake REQUIRED)
 ################################################################################
 # Install
 ################################################################################
-install(
-  DIRECTORY launch param rviz config
+install(DIRECTORY config launch
   DESTINATION share/${PROJECT_NAME}
 )
-
-################################################################################
-
-add_executable(lucia_odom src/odom.cpp)
-target_link_libraries(lucia_odom ${ament_cmake_LIBRARIES})
-
-################################################################################
 
 ################################################################################
 # Macro for ament package
