@@ -26,7 +26,7 @@ def generate_launch_description():
             executable='robot_state_publisher',
             name='robot_state_pushlisher',
             output='screen',
-            parameters=[{'robot_description': open('/urdf/my_robot.urdf').read()}]
+            parameters=[{'robot_description': open(urdf_file_path).read()}]
         ),
         Node(
             package='rviz2',
