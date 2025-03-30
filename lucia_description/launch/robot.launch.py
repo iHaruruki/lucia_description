@@ -13,7 +13,6 @@ def generate_launch_description():
         urdf_file_name
     )
 
-def generate_launch_description():
     return LaunchDescription([
         Node(
             package='joint_state_publisher',
