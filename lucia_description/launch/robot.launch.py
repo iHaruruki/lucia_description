@@ -4,6 +4,16 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 
 def generate_launch_description():
+    package_name = 'lucia_description'
+    urdf_file_name = 'my_robot.urdf'
+
+    urdf_file_path = os.path.join(
+        get_package_share_directory(package_name),
+        'urdf',
+        urdf_file_name
+    )
+
+def generate_launch_description():
     return LaunchDescription([
         Node(
             package='joint_state_publisher',
