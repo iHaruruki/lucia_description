@@ -19,8 +19,6 @@
         <origin xyz="0 0 0.6" rpy="0 0 0"/>
     </joint>
 
-    <!-- base_link and base_scan (required for Nav2) -->
-
     <link name="base_link">
         <visual>
             <geometry>
@@ -30,6 +28,8 @@
             <material name="blue" />
         </visual>
     </link>
+
+    <!-- base_link and base_scan (required for Nav2) -->
 
     <joint name="base_scan_joint" type="fixed">
         <parent link="base_link"/>
