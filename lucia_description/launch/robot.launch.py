@@ -5,7 +5,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     package_name = 'lucia_description'  # package name
-    urdf_file_name = 'turtlebot3_burger.urdf'    # URDF file name
+    urdf_file_name = 'lucia.urdf'    # URDF file name
 
     # パッケージの共有ディレクトリを取得
     urdf_file_path = os.path.join(
