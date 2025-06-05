@@ -2,7 +2,7 @@
 ## Dependency
 ```shell
 $ sudo apt install ros-humble-xacro
-$ udo apt install ros-humble-joint-state-publisher
+$ sudo apt install ros-humble-joint-state-publisher
 $ sudo apt install ros-humble-joint-state-publisher-gui
 ```
 ## Setup
