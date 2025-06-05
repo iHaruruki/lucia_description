@@ -29,12 +29,29 @@
         </visual>
     </link>
 
+    <!-- lsc_mount and base_link -->
+    <joint name="lsc_mount_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lsc_mount"/>
+        <origin xyz="0.0 0 -0.25" rpy="0 0 0"/>
+    </joint>
+
+    <link name="lsc_mount">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.06"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
     <!-- base_link and laser_front (required for Nav2) -->
 
     <joint name="laser_front_joint" type="fixed">
-        <parent link="base_link"/>
+        <parent link="lsc_mount"/>
         <child link="laser_front"/>
-        <origin xyz="0.5 0 -0.25" rpy="0 0 0"/>
+        <origin xyz="0.5 0 0" rpy="0 0 0"/>
     </joint>
 
     <link name="laser_front">
@@ -50,9 +67,9 @@
     <!-- base_link and laser_rear (required for Nav2) -->
 
     <joint name="laser_rear_joint" type="fixed">
-        <parent link="base_link"/>
+        <parent link="lsc_mount"/>
         <child link="laser_rear"/>
-        <origin xyz="-0.5 0 -0.25" rpy="0 0 3.14"/>
+        <origin xyz="-0.5 0 0" rpy="0 0 3.14"/>
     </joint>
 
     <link name="laser_rear">
