@@ -173,7 +173,7 @@
     <joint name="base_link_TO_module1_lower_link" type="fixed">
         <parent link="base_link"/>
         <child link="module1_lower_link"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 0 0.6" rpy="0 0 0"/>
     </joint>
 
     <link name="module1_roll_link">
