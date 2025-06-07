@@ -8,7 +8,6 @@ def generate_launch_description():
     pkg_share = get_package_share_directory('lucia_description')
     urdf_path = os.path.join(pkg_share, 'urdf', 'lucia.urdf')
 
-    # 2) Read it into a Python string (launch-time)
     with open(urdf_path, 'r') as f:
         robot_desc = f.read()
 
