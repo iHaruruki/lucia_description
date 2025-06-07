@@ -9,6 +9,10 @@
         <color rgba="0 0 0.5 1" />
     </material>
 
+   <material name="green">
+        <color rgba="0 0.5 0 1" />
+    </material>
+
     <!-- base_footprint (projection of base_link on the ground) -->
 
     <link name="base_footprint"/>
@@ -17,16 +21,16 @@
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
-        <origin xyz="0 0 0.6" rpy="0 0 0"/>
+        <origin xyz="0 0 0.55" rpy="0 0 0"/>
     </joint>
 
     <link name="base_link">
         <visual>
             <geometry>
-                <cylinder radius="0.5" length="1.0" />
+                <cylinder radius="0.5" length="1.1" />
             </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0" />
-            <material name="blue" />
+            <origin xyz="0 0 0.0" rpy="0 0 0" />
+            <material name="green" />
         </visual>
     </link>
 
@@ -88,14 +92,14 @@
     <joint name="base_left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
-        <origin xyz="0.0 0.2 -0.5" rpy="0 0 0"/>
+        <origin xyz="0.0 0.3 -0.5" rpy="0 0 0"/>
         <axis xyz="0 1 0"/>
     </joint>
 
     <link name="left_wheel">
         <visual>
             <geometry>
-                <cylinder radius="0.3" length="0.1"/>
+                <cylinder radius="0.2" length="0.1"/>
             </geometry>
             <origin xyz="0 0 0" rpy="1.57 0 0" />
             <material name="grey" />
@@ -105,14 +109,14 @@
     <joint name="base_right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel"/>
-        <origin xyz="0.0 -0.2 -0.5" rpy="0 0 0"/>
+        <origin xyz="0.0 -0.3 -0.5" rpy="0 0 0"/>
         <axis xyz="0 1 0"/>
     </joint>
 
     <link name="right_wheel">
         <visual>
             <geometry>
-                <cylinder radius="0.3" length="0.1"/>
+                <cylinder radius="0.2" length="0.1"/>
             </geometry>
             <origin xyz="0 0 0" rpy="1.57 0 0" />
             <material name="grey" />
