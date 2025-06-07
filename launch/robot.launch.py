@@ -6,15 +6,13 @@ from launch.substitutions import Command, FindExecutable, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
-    package_name = 'lucia_description'  # package name
-    urdf_file_name = 'lucia.urdf'    # URDF file name
+    pkg_share = FindPackageShare('lucia_description')
+    urdf_file = PathJoinSubstitution([pkg_share, 'urdf', 'lucia.urdf'])
 
     # build the URDF string by xacro
     robot_description = Command([
-        FindExecutable(name='xacro'), ' ',
-        PathJoinSubstitution([
-        FindPackageShare('lucia_description'), 'urdf', 'lucia.urdf'
-        ])
+        FindExecutable(name='urdf'), ' ',
+        urdf_file
     ])
 
     return LaunchDescription([
