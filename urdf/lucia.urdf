@@ -620,7 +620,7 @@
         <origin xyz="0 0 0.075" rpy="0 0 0"/>
     </joint>
 
-    <!--########## Module5 ##########-->
+    <!--########## Module6 ##########-->
     <!-- module6_lower_link -->
     <link name="module6_lower_link">
         <visual>
@@ -685,7 +685,7 @@
         <limit lower="-0.5236" upper="0.5236" effort="1" velocity="1"/>
     </joint>
 
-    <!-- module5_upper_link -->
+    <!-- module6_upper_link -->
     <link name="module6_upper_link">
         <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -714,5 +714,7 @@
         <child link="module6_upper_link"/>
         <origin xyz="0 0 0.075" rpy="0 0 0"/>
     </joint>
+
+
 
 </robot>
