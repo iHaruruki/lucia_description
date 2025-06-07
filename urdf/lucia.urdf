@@ -715,6 +715,23 @@
         <origin xyz="0 0 0.075" rpy="0 0 0"/>
     </joint>
 
+    <!--########## Vital Arm ##########-->
+    <link name="vital_arm_link">
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <cylinder radius="0.05" length="0.1"/>
+        </geometry>
+        <material name="white">
+            <color rgba="0 0 0 1"/>
+        </material>
+        </visual>
+    </link>
 
+    <joint name="vital_arm_joint" type="fixed">
+        <parent link="module6_upper_link"/>
+        <child link="vital_arm_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
 
 </robot>
