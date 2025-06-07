@@ -1,4 +1,4 @@
-# lucia_slam_navigation
+# lucia_description
 ## Dependency
 ```shell
 $ sudo apt install ros-humble-xacro
