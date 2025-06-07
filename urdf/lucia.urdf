@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<robot name="lucia">
+<robot name="lucia" xmlns:xacro="http://ros.org/wiki/xacro">
 
+    <!-- Init colour -->
     <material name="grey">
         <color rgba="0.5 0.5 0.5 1" />
     </material>
@@ -20,7 +21,7 @@
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
-        <origin xyz="0.0 0.0 0.010" rpy="0 0 0"/>
+        <origin xyz="0.0 0.0 0.5" rpy="0 0 0"/>
     </joint>
 
     <link name="base_link">
@@ -37,7 +38,7 @@
     <joint name="lsc_mount_joint" type="fixed">
         <parent link="base_link"/>
         <child link="lsc_mount"/>
-        <origin xyz="0.0 0 -0.25" rpy="0 0 0"/>
+        <origin xyz="0.0 0 0.25" rpy="0 0 0"/>
     </joint>
 
     <link name="lsc_mount">
