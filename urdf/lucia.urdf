@@ -21,7 +21,7 @@
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
-        <origin xyz="0.0 0.0 0.55" rpy="0 0 0"/>
+        <origin xyz="0.0 0.0 0.6" rpy="0 0 0"/>
     </joint>
 
     <link name="base_link">
@@ -54,7 +54,6 @@
     </link>
 
     <!-- base_link and laser_front (required for Nav2) -->
-
     <joint name="laser_front_joint" type="fixed">
         <parent link="lsc_mount"/>
         <child link="laser_front"/>
@@ -72,7 +71,6 @@
     </link>
 
     <!-- base_link and laser_rear (required for Nav2) -->
-
     <joint name="laser_rear_joint" type="fixed">
         <parent link="lsc_mount"/>
         <child link="laser_rear"/>
@@ -90,7 +88,6 @@
     </link>
 
     <!-- Wheels -->
-
     <joint name="base_left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
@@ -101,7 +98,7 @@
     <link name="left_wheel">
         <visual>
             <geometry>
-                <cylinder radius="0.2" length="0.1"/>
+                <cylinder radius="0.1" length="0.05"/>
             </geometry>
             <origin xyz="0 0 0" rpy="1.57 0 0" />
             <material name="grey" />
@@ -118,7 +115,7 @@
     <link name="right_wheel">
         <visual>
             <geometry>
-                <cylinder radius="0.2" length="0.1"/>
+                <cylinder radius="0.1" length="0.05"/>
             </geometry>
             <origin xyz="0 0 0" rpy="1.57 0 0" />
             <material name="grey" />
