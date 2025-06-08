@@ -51,7 +51,7 @@
                 <cylinder radius="0.1" length="0.06"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <material>
+            <material name="transparency">
                 <color rgba="0 0 0 0" />
             </material>
         </visual>
