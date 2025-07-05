@@ -16,13 +16,24 @@ endif()
 # Find ament packages and libraries for ament and system dependencies
 ################################################################################
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(urdf REQUIRED)
+
+add_executable(angle_to_joint_state src/angle_to_joint_state.cpp)
+ament_target_dependencies(angle_to_joint_state
+  rclcpp std_msgs sensor_msgs
+)
 
 ################################################################################
 # Install
 ################################################################################
 install(DIRECTORY rviz urdf launch
   DESTINATION share/${PROJECT_NAME}
+)
+install(TARGETS angle_to_joint_state
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 ################################################################################
