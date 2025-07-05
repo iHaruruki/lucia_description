@@ -3,12 +3,15 @@
 #include <sensor_msgs/msg/joint_state.hpp>
 #include <map>
 #include <cmath>
+#include <chrono>
 
 class AngleToJointState : public rclcpp::Node {
 public:
   AngleToJointState()
   : Node("angle_to_joint_state")
   {
+    rclcpp::QoS qos(10);
+    qos.transient_local();
     // Publisher: /joint_states
     joint_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 10);
 
@@ -16,6 +19,11 @@ public:
     sub_ = this->create_subscription<std_msgs::msg::String>(
       "angle_cmd", 10,
       std::bind(&AngleToJointState::angleCallback, this, std::placeholders::_1));
+
+    publish_timer_ = create_wall_timer(
+      std::chrono::milliseconds(33),
+      std::bind(&AngleToJointState::publishLoop, this));
+
 
     // モジュールID＋軸 のキー → URDF上の joint 名
     joint_names_ = {
@@ -64,10 +72,21 @@ private:
 
   }
 
+  void publishLoop() {
+    sensor_msgs::msg::JointState js;
+    js.header.stamp = now();
+    for (auto &kv : joint_positions_) {
+      js.name.push_back(kv.first);
+      js.position.push_back(kv.second);
+    }
+    joint_pub_->publish(js);
+  }
+
   rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_pub_;
   rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_;
+  rclcpp::TimerBase::SharedPtr publish_timer_;
+  std::map<std::string,double> joint_positions_;
   std::map<std::string,std::string> joint_names_;
-  std::map<std::string,double>       joint_positions_;
 };
 
 int main(int argc, char** argv){
