@@ -59,7 +59,7 @@ private:
     std::string joint = it->second;
 
     // 状態を更新
-    joint_positions_[joint] = rad;
+    joint_positions_[joint] = -rad;
 
     // JointState メッセージを組み立て
     sensor_msgs::msg::JointState js;
